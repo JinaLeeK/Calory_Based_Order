@@ -158,20 +158,20 @@ function setMenu() {
 }
 function setData(category) {
   if (category === "classic") {
-      $('#classic1').data({ id: "25927", name: "Chicken Sandwich", photoUrl: './_images/ChickfilA-Chicken-Sandwich.png', calory: '400'});
-      $('#classic2').data({ id: "1387599", name: "Chicken Deluxe Sandwich", photoUrl: './_images/Chicken-Deluxe-Sandwich.png', calory: '490'});
-      $('#classic3').data({ id: "779759", name: "Spicy Chicken Sandwich", photoUrl: './_images/Spicy-Chicken-Sandwich.png', calory: '490'});
-      $('#classic4').data({ id: "874825", name: "Spicy Chicken Deluxe Sandwich", photoUrl: './_images/Spicy-Chicken-Deluxe-Sandwich.png', calory: '570'});
-      $('#classic5').data({ id: "27279", name: "Nuggets", photoUrl: './_images/Nuggets.png', calory: '270'});
-      $('#classic6').data({ id: "60107", name: "Chick-n-Strips", photoUrl: './_images/ChicknStrips.png', calory: '360'});
-      $('#classic7').data({ id: "8267448", name: "Grilled Chicken Club Sandwich", photoUrl: './_images/Grilled-Chicken-Club-Sandwich.png', calory: '440'});
-      $('#classic8').data({ id: "3373280", name: "Grilled Chicken Sandwich", photoUrl: './_images/Grilled-Chicken-Sandwich.png', calory: '320'});
-      $('#classic9').data({ id: "60108", name: "Chicken Salad Sandwich", photoUrl: './_images/Chicken-Salad-Sandwich.png', calory: '500'});
-      $('#classic10').data({ id: "7194136", name:"Grilled Nuggets", photoUrl: './_images/Grilled-Nuggets-6.png', calory: '140'});
+      $('#classic1').data({ id: "25927", name: "Chicken Sandwich", photoUrl: './images/ChickfilA-Chicken-Sandwich.png', calory: '400'});
+      $('#classic2').data({ id: "1387599", name: "Chicken Deluxe Sandwich", photoUrl: './images/Chicken-Deluxe-Sandwich.png', calory: '490'});
+      $('#classic3').data({ id: "779759", name: "Spicy Chicken Sandwich", photoUrl: './images/Spicy-Chicken-Sandwich.png', calory: '490'});
+      $('#classic4').data({ id: "874825", name: "Spicy Chicken Deluxe Sandwich", photoUrl: './images/Spicy-Chicken-Deluxe-Sandwich.png', calory: '570'});
+      $('#classic5').data({ id: "27279", name: "Nuggets", photoUrl: './images/Nuggets.png', calory: '270'});
+      $('#classic6').data({ id: "60107", name: "Chick-n-Strips", photoUrl: './images/ChicknStrips.png', calory: '360'});
+      $('#classic7').data({ id: "8267448", name: "Grilled Chicken Club Sandwich", photoUrl: './images/Grilled-Chicken-Club-Sandwich.png', calory: '440'});
+      $('#classic8').data({ id: "3373280", name: "Grilled Chicken Sandwich", photoUrl: './images/Grilled-Chicken-Sandwich.png', calory: '320'});
+      $('#classic9').data({ id: "60108", name: "Chicken Salad Sandwich", photoUrl: './images/Chicken-Salad-Sandwich.png', calory: '500'});
+      $('#classic10').data({ id: "7194136", name:"Grilled Nuggets", photoUrl: './images/Grilled-Nuggets-6.png', calory: '140'});
   } else if (category === "side") {
-      $('#side1').data({ id: "25927", name: "Chicken Sandwich", photoUrl: './_images/ChickfilA-Chicken-Sandwich.png', calory: '400'});
-      $('#side2').data({ id: "1387599", name: "Chicken Deluxe Sandwich", photoUrl: './_images/Chicken-Deluxe-Sandwich.png', calory: '490'});
-      $('#side3').data({ id: "779759", name: "Spicy Chicken Sandwich", photoUrl: './_images/Spicy-Chicken-Sandwich.png', calory: '490'});
+      $('#side1').data({ id: "25927", name: "Chicken Sandwich", photoUrl: './images/ChickfilA-Chicken-Sandwich.png', calory: '400'});
+      $('#side2').data({ id: "1387599", name: "Chicken Deluxe Sandwich", photoUrl: './images/Chicken-Deluxe-Sandwich.png', calory: '490'});
+      $('#side3').data({ id: "779759", name: "Spicy Chicken Sandwich", photoUrl: './images/Spicy-Chicken-Sandwich.png', calory: '490'});
 
   }
 }

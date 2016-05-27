@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Comatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chick-Fil-A: Calory based Order</title>
+  <!-- stylesheet -->
+  <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/7.0.2/css/bootstrap-slider.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- API for nutrition info-->
+  <script src="http://platform.fatsecret.com/js?key=20cdb3c8827945939d2597722a493c83&auto_template=false"></script>
+  <!-- javascript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/7.0.2/bootstrap-slider.min.js"></script>
+</head>
+
+<body data-spy="scroll" data-target=".navbar">
+  <header id="banner" class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <a href="./index.html" class="scrollable"><img src="./_images/home.png" alt=""></a>
+      <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+      <nav id="navbar" role="navigation" class="collapse navbar-collapse">
+        <ul id="category" class="nav navbar-nav navbar-right">
+          <li><a href="#" id="Classic" class="scrollable selected">Classic</a></li>
+          <li><a href="#" id="Side" class="scrollable">Side Menu</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <article>
+        <div id="currentPanel"></div>
+        <div id="menu-template" style="display:none">
+            <div class="panel">
+                  <h1></h1>
+                  <hr>
+                    <div class="row text-center">
+                      <div class="col-sm-6 col-md-4 menu inline-popups" style="display: none">
+                        <div class="thumbnail">
+                          <div class="frame">
+                            <img class="img-responsive img-center" src="#" alt="" data-toggle="modal" data-target="#popup-template"  draggable="true">
+                          </div>
+                          <div class="name"></div>
+                          <div class="value"></div>
+                        </div>
+                      </div>   <!-- classic1 -->
+                      <div class="col-sm-6 col-md-4 menu inline-popups" style="display: none" >
+                        <div class="thumbnail">
+                          <div class="frame">
+                            <img class="img-responsive img-center" src="#" alt="" data-toggle="modal" data-target="#popup-template" draggable="true" >
+                          </div>
+                          <div class="name"></div>
+                          <div class="value"></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 menu inline-popups" style="display: none">
+                        <div class="thumbnail">
+                          <div class="frame">
+                            <img class="img-responsive img-center" src="#" alt="" draggable="true" data-toggle="modal" data-target="#popup-template">
+                          </div>
+                          <div class="name"></div>
+                          <div class="value"></div>
+                        </div>
+                      </div>   <!-- classic3 -->
+                    </div>  <!-- row1 -->
+
+                    <div class="row text-center">
+                      <div class="col-sm-6 col-md-4 menu inline-popups" style="display: none">
+                        <div class="thumbnail">
+                          <div class="frame">
+                            <img class="img-responsive img-center" src="#" alt="" draggable="true" data-toggle="modal" data-target="#popup-template">
+                          </div>
+                          <div class="name"></div>
+                          <div class="value"></div>
+                        </div>
+                      </div>   <!-- classic4 -->
+                      <div class="col-sm-6 col-md-4 menu inline-popups" style="display: none">
+                        <div class="thumbnail">
+                          <div class="frame">
+                            <img class="img-responsive img-center" src="#" alt="" draggable="true" data-toggle="modal" data-target="#popup-template">
+                          </div>
+                          <div class="name"></div>
+                          <div class="value"></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 menu inline-popups" style="display: none">
+                        <div class="thumbnail">
+                          <div class="frame">
+                            <img class="img-responsive img-center" src="#" alt="" draggable="true" data-toggle="modal" data-target="#popup-template">
+                          </div>
+                          <div class="name"></div>
+                          <div class="value"></div>
+                        </div>
+                      </div>
+                    </div>  <!-- row2 -->
+
+                    <div class="row text-center">
+                      <div class="col-sm-6 col-md-4 menu inline-popups" style="display: none">
+                        <div class="thumbnail">
+                          <div class="frame">
+                            <img class="img-responsive img-center" src="#" alt="" draggable="true" data-toggle="modal" data-target="#popup-template">
+                          </div>
+                          <div class="name"></div>
+                          <div class="value"></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 menu inline-popups" style="display: none">
+                        <div class="thumbnail">
+                          <div class="frame">
+                            <img class="img-responsive img-center" src="#" alt="" draggable="true" data-toggle="modal" data-target="#popup-template">
+                          </div>
+                          <div class="name"></div>
+                          <div class="value"></div>
+                        </div>
+                      </div>
+                      <div class="col-sm-6 col-md-4 menu inline-popups" style="display: none">
+                        <div class="thumbnail">
+                          <div class="frame">
+                            <img class="img-responsive img-center" src="#" alt="" draggable="true" data-toggle="modal" data-target="#popup-template">
+                          </div>
+                          <div class="name"></div>
+                          <div class="value"></div>
+                        </div>
+                      </div>
+                    </div>  <!-- row3 -->
+
+                    <div class="row text-center">
+                      <div class="col-sm-6 col-md-4 menu inline-popups" style="display: none">
+                        <div class="thumbnail">
+                          <div class="frame">
+                            <img class="img-responsive img-center" src="#" alt="" draggable="true" data-toggle="modal" data-target="#popup-template">
+                          </div>
+                          <div class="name"></div>
+                          <div class="value"></div>
+                        </div>
+                      </div>
+                    </div> <!-- row4-->
+                </div>
+      </article>
+      <aside>
+        <section id="section-above">
+          <p draggable="true">Select your calory</p>
+          <input type="text" class="span2" value="1000" data-slider-min="600" data-slider-max="1200" data-slider-step="20" data-slider-value="1000" data-slider-id="value-slider" id="slider" data-slider-tooltip="hide" data-slider-handle="round" />
+        </section>
+        <section id="section-below">
+          <p>Drag Favorites Here</p>
+          <table class="table" id="faves">
+            <thead class="thead-default">
+              <tr>
+                <th>My bucket</th>
+                <th></th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="favList">
+            </tbody>
+            <tbody id="total"></tbody>
+          </table>
+          <button id="order-btn" class="btn btn-default btn-sm"  data-toggle="modal" data-target="#order">Order</button>
+          <button id="reset-btn" class="btn btn-default btn-sm">Reset</button>
+        </section>
+
+      </aside>
+    </div>
+  </main>
+
+  <footer>
+    <p><script>document.write(new Date().getFullYear())</script>. All Rights Reversed</p>
+  </footer>
+
+  <div id="order" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+        Your order has been successfully placed!
+        </div>
+        <div class="modal-body">
+           We will send you message when it is ready to pick up.
+         </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="popup-template" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <div class=modal-content>
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="modalTitle"></h4>
+        </div>
+        <div class="modal-body"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button id="select-btn" type="button" class="btn btn-primary" data-dismiss="modal">Select</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="template" style="display:none;">
+    <div class="holder">
+      <div class="title"><script>fatsecret.writeHolder("foodtitle");</script></div>
+      <script>fatsecret.writeHolder("nutritionpanel");</script>
+      <div id="container"></div>
+    </div>
+  </div>
+
+
+  <script style="text/javascript" src="scripts/jquery.ndd.js"></script>
+  <script style="text/javascript" src="scripts/script.js"></script>
+  <script style="text/javascript" src="scripts/dragdrop.js"></script>
+
+</body>
+</html>

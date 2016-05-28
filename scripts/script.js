@@ -153,10 +153,11 @@ function setPopup(foodId) {
 
 function setMenu() {
   $("#Classic").data({num: 10});
-  $("#Side").data({num: 3});
+  $("#Beverage").data({num: 11});
   $("#Desserts").data({num:3});
 }
 function setData(category) {
+
   if (category === "classic") {
       $('#classic1').data({ id: "25927", name: "Chicken Sandwich", photoUrl: './images/ChickfilA-Chicken-Sandwich.png', calory: '400'});
       $('#classic2').data({ id: "1387599", name: "Chicken Deluxe Sandwich", photoUrl: './images/Chicken-Deluxe-Sandwich.png', calory: '490'});
@@ -168,10 +169,18 @@ function setData(category) {
       $('#classic8').data({ id: "3373280", name: "Grilled Chicken Sandwich", photoUrl: './images/Grilled-Chicken-Sandwich.png', calory: '320'});
       $('#classic9').data({ id: "60108", name: "Chicken Salad Sandwich", photoUrl: './images/Chicken-Salad-Sandwich.png', calory: '500'});
       $('#classic10').data({ id: "7194136", name:"Grilled Nuggets", photoUrl: './images/Grilled-Nuggets-6.png', calory: '140'});
-  } else if (category === "side") {
-      $('#side1').data({ id: "25927", name: "Chicken Sandwich", photoUrl: './images/ChickfilA-Chicken-Sandwich.png', calory: '400'});
-      $('#side2').data({ id: "1387599", name: "Chicken Deluxe Sandwich", photoUrl: './images/Chicken-Deluxe-Sandwich.png', calory: '490'});
-      $('#side3').data({ id: "779759", name: "Spicy Chicken Sandwich", photoUrl: './images/Spicy-Chicken-Sandwich.png', calory: '490'});
+  } else if (category === "beverage") {
+      $('#beverage1').data({ id: "60155", name: "Ice Tea - Sweet", photoUrl: './images/Iced-Tea-Sweetened.png', calory: '120'});
+      $('#beverage2').data({ id: "60158", name: "Ice Tea - Unsweet", photoUrl: './images/Iced-Tea-Unsweetened.png', calory: '0'});
+      $('#beverage3').data({ id: "60161", name: "Lemonade", photoUrl: './images/ChickfilA-Lemonade.png', calory: '230'});
+      $('#beverage4').data({ id: "60148", name: "Diet Lemonade", photoUrl: './images/ChickfilA-Lemonade-diet.png', calory: '20'});
+      $('#beverage5').data({ id: "60140", name: "Coca-Cola", photoUrl: './images/CocaCola.png', calory: '170'});
+      $('#beverage6').data({ id: "60144", name: "Diet Coke", photoUrl: './images/Diet-Coke.png', calory: '0'});
+      $('#beverage7').data({ id: "60152", name: "Dr Pepper", photoUrl: './images/Dr-Pepper.png', calory: '180'});
+      $('#beverage8').data({ id: "60134", name: "Chick-fil-A Coffee", photoUrl: './images/ChickfilA-Coffee.png', calory: '5'});
+      $('#beverage9').data({ id: "9582538", name: "Chick-fil-A Iced Coffee", photoUrl: './images/ChickfilA-Iced-Coffee.png', calory: '180'});
+      $('#beverage10').data({ id: "60163", name: "Mlik", photoUrl: './images/Milk-Low-Fat.png', calory: '110'});
+      $('#beverage11').data({ id: "60137", name: "Chocolate Milk", photoUrl: './images/Chocolate-Milk.png', calory: '150'});
 
   }
 }
